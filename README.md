@@ -4,6 +4,10 @@ Pytania zanjdują się w innym pliku o nazwie 44_questions_to_olist
 
 Co znajdziesz w tym projekcie?
 
+Czysczenie danych, sprawdzanie ich popraności
+
+Analizę brakujących wartości
+
 Funkcje agregujące takie jak: COUNT, SUM, AVG, MIN, MAX, ROUND, EXTRACT, TO_CHAR itp.
 
 Klauzule takie jak: SELECT, WHERE, HAVING, GROUP BY, ORDER BY, LEFT JOIN, INNER JOIN, CASE WHEN, LIMIT.
