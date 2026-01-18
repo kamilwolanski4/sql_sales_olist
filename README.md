@@ -1,6 +1,6 @@
 W tym projekcie przeanalizuję dane sprzedażowe brazylijskiego e-commerce (Olist), aby odpowiedzieć na 44 pytania biznesowe z wykorzystaniem SQL. Następnie zbuduję dashboard w Power BI, aby wyróżnić najważniejsze KPI oraz wskaźniki dotyczące działalności firmy.
 
-Pytania zanjdują się w innym pliku o nazwie 44-questions-to-olist
+Pytania zanjdują się w innym pliku o nazwie 44_questions_to_olist
 
 Co znajdziesz w tym projekcie?
 
