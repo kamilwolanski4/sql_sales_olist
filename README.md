@@ -23,4 +23,4 @@ CTE (Common Table Expressions) oraz podzapytania (subqueries).
 
 INFORMACJE DODATKOWE / MODYFIKACJE DANYCH: 
 tabela *olist_geolocation_dataset*
-Tabela geolokalizacji zawiera wiele punktów dla jednego prefiksu kodu pocztowego, dlatego została zagregowana do jednego rekordu na prefiks poprzez uśrednienie wartości szerokości i długości geograficznej (latitude/longitude), aby uniknąć zwielokrotnienia wierszy podczas wykonywania złączeń (JOIN).
+- Tabela geolokalizacji zawiera wiele punktów dla jednego prefiksu kodu pocztowego, dlatego została zagregowana do jednego rekordu na prefiks poprzez uśrednienie wartości szerokości i długości geograficznej (latitude/longitude), aby uniknąć zwielokrotnienia wierszy podczas wykonywania złączeń (JOIN).
