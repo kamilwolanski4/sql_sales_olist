@@ -1,0 +1,3 @@
+Folder analysis powstał z myślą aby jak najbardziej ułatwić poruszanie się w tym projekcie. 
+Foldery, które się w nim znajdują odpowiadają pytaniom biznesowym, które zostały podzielone na sekcje/kategorie. (nazwy folderów)
+Najlepiej spojrzeć na głównej stronie plik 44_questions_to_olis i zapoznać się z pytaniami, a następnie wrócić do folderu analysis. 
