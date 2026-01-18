@@ -2,6 +2,10 @@ W tym projekcie przeanalizuję dane sprzedażowe brazylijskiego e-commerce (Olis
 
 Pytania zanjdują się w innym pliku o nazwie 44_questions_to_olist
 
+Folder *analysis* powstał z myślą aby jak najbardziej ułatwić poruszanie się w tym projekcie. 
+Foldery, które się w nim znajdują odpowiadają pytaniom biznesowym, które zostały podzielone na sekcje/kategorie. (nazwy folderów)
+Najlepiej spojrzeć na głównej stronie plik *44_questions_to_olist* i zapoznać się z pytaniami, a następnie wrócić do folderu analysis. 
+
 Co znajdziesz w tym projekcie?
 
 Czysczenie danych, sprawdzanie ich popraności
