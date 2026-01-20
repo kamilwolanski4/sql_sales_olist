@@ -80,7 +80,7 @@
 
 34. Jaka jest średnia kwota płatności na zamówienie?
 
-35. Jaka jest średnia liczba rat (installments) w płatnościach?
+35. Jaka jest średnia liczba rat (installments) na zamówienie?
 
 36. Czy zamówienia opłacane różnymi metodami mają różną średnią wartość?
 
