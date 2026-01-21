@@ -1,1 +1,28 @@
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logi / temp
+*.log
+*.tmp
+
+# lokalne bazy
+*.db
+*.sqlite
+*.sqlite3
+
+# eksporty danych 
+*.csv
+*.xlsx
+*.parquet
+
+# sekrety / połączenia
+.env
+.env.*
+*.key
+*.pem
 
