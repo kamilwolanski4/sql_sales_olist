@@ -1,14 +1,26 @@
 ## 1) Przegląd danych i wolumen
 
 1. Ilu unikalnych klientów znajduje się w danych (customers)?
+-- 96 096
 
 2. Ile łącznie złożono zamówień?
+-- 99 441
 
 3. Jaka jest liczba zamówień w podziale na status (delivered / canceled / shipped itd.)?
+delivered	96 478
+shipped		1 107
+canceled	625
+unavailable	609
+invoiced	314
+processing	301
+created		5
+approved	2
 
 4. Ile unikalnych sprzedawców działa w systemie?
+-- 3 095
 
 5. Ile unikalnych produktów i kategorii produktów występuje w bazie?
+-- produkty: 32 951, kategorie: 74
 
 ## 2) Sprzedaż i przychód (Sales & Revenue)
 
