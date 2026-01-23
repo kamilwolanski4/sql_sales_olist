@@ -25,8 +25,35 @@
 ## 2) Sprzedaż i przychód (Sales & Revenue)
 
 6. Jaki jest łączny przychód (GMV) ze sprzedaży?
-
+- 13,221,498.11 
 7. Jak zmienia się liczba zamówień w czasie (trend miesięczny / roczny)?
+/*
+year  month quantity
+2016	9	1
+2016	10	320
+2016	12	1
+2017	1	760
+2017	2	1765
+2017	3	2689
+2017	4	2374
+2017	5	3693
+2017	6	3252
+2017	7	3974
+2017	8	4348
+2017	9	4301
+2017	10	4590
+2017	11	7395
+2017	12	5832
+2018	1	7187
+2018	2	6706
+2018	3	7288
+2018	4	6778
+2018	5	7066
+2018	6	6164
+2018	7	6176
+2018	8	6620
+2018	9	1
+*/
 
 8. Jak zmienia się przychód w czasie (trend miesięczny / roczny)?
 
