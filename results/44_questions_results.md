@@ -96,20 +96,59 @@ year   month    total_revenue
 2018	 5		   999867.28
 ```
 11. Jaka jest średnia wartość zamówienia (AOV – Average Order Value)?
-
+- 137.04
 12. Jaka jest średnia liczba produktów (pozycji) w zamówieniu?
-
+- 1.14 
 13. Ile zamówień ma więcej niż jeden produkt (multi-item orders)?
-
+- 9 803
 ## 3) Produkty i kategorie
 
 14. Które kategorie produktów sprzedają się najczęściej (wolumen)?
+```text
+category:     nr of items
+cama_mesa_banho:	11115
+beleza_saude:	9670
+esporte_lazer:	8641
+moveis_decoracao:	8334
+informatica_acessorios:	7827
+utilidades_domesticas:	6964
+```
 
 15. Które kategorie generują najwyższy przychód?
+```text 
+category    		 	  income 
+beleza_saude			1233131.72
+relogios_presentes		1166176.98
+cama_mesa_banho			1023434.76
+esporte_lazer			954852.55
+informatica_acessorios	888724.61
+ ```
 
 16. Które kategorie mają najniższy przychód lub najniższą sprzedaż?
-
+```text 
+category  						income
+seguros_e_servicos				283.29
+fashion_roupa_infanto_juvenil	519.95
+cds_dvds_musicais				730.00
+casa_conforto_2					760.27
+flores							1110.04
+ ```
 17. Jak różnią się średnie wartości zamówień w zależności od kategorii produktu?
+```text
+wyswietle tylko top 10 kategorii 
+
+category    									avg_order_value
+pcs													1235.50
+portateis_casa_forno_e_cafe							647.08
+eletrodomesticos_2									475.57
+agro_industria_e_comercio							398.68
+portateis_cozinha_e_preparadores_de_alimentos		302.59
+instrumentos_musicais								301.66	
+eletroportateis										300.09
+telefonia_fixa										260.92
+construcao_ferramentas_seguranca					243.86
+climatizacao										216.76
+ ```
 
 ## 4) Klienci i geografia
 
