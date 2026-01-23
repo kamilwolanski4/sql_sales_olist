@@ -153,6 +153,10 @@ select
 	,round(MAX(ABS(difference)), 2) as max_abs_diff
 from joined 
 
+/* 
+orders_in_items		missing_payments    avg_diff   avg_abs_diff   max_abs_diff
+ 	98666				1				-0.03	     0.03			182.81
+*/
 
 
 
