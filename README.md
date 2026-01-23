@@ -1,4 +1,5 @@
 W tym projekcie przeanalizuję dane sprzedażowe brazylijskiego e-commerce (Olist), aby odpowiedzieć na 44 pytania biznesowe z wykorzystaniem SQL. Następnie zbuduję dashboard w Power BI, aby wyróżnić najważniejsze KPI oraz wskaźniki dotyczące działalności firmy.
+
 Surowe dane można pobrać pod tym linkiem: 
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
