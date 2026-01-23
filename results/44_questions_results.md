@@ -153,22 +153,103 @@ climatizacao										216.76
 ## 4) Klienci i geografia
 
 18. Jakie są top 5 miast z największą liczbą zamówień?
+```text
+city 				nr of orders
+sao paulo	15540
+rio de janeiro	6882
+belo horizonte	2773
+brasilia	2131
+curitiba	1521
+``` 
 
 19. Ile klientów znajduje się w każdym stanie (customer_state)?
+```text
+wypisuje tylko 10 pierwszych
+state	 nr_of_customers 
+SP			40302
+RJ			12384
+MG			11259
+RS			5277
+PR			4882
+SC			3534
+BA			3277
+DF			2075
+ES			1964
+GO			1952
+``` 
 
 20. Ile zamówień zostało dostarczonych w każdym stanie?
+```text
+ wypisuje pierwsze 10 stanów
+state 	nr_of_orders
+SP			40501
+RJ			12350
+MG			11354
+RS			5345
+PR			4923
+SC			3546
+BA			3256	
+DF			2080
+ES			1995
+GO			1957
+```
 
 21. W których stanach średnia wartość zamówienia jest najwyższa?
+```text
+state  avg_order_value
+PB			217.77
+AP			199.62
+AC			199.14
+AL			198.63
+RO			187.99
+PA			184.43
+PI			177.99
+TO			176.65
+RN			173.22
+RR			172.13
+```
 
 ## 5) Sprzedawcy (Sellers)
 
 22. Ilu sprzedawców działa w każdym stanie?
+```text 
+wypisuje tylko 10 pierwszych
+state 	nr_of_sellers
+SP			1849
+PR			349
+MG			244
+SC			190
+RJ			171
+RS			129
+GO			40
+DF			30
+ES			23
+BA			19
+```
 
 23. Który sprzedawca generuje największy przychód?
+- 4869f7a5dfa277a7dca6462dcf3b52b2:	226,987.93
 
 24. Który sprzedawca ma najwyższą średnią wartość zamówienia?
+- e3b4998c7a498169dc7bce44e6bb6277:	6,735.00
 
 25. Czy istnieją sprzedawcy, którzy mają wyraźnie wyższy odsetek opóźnionych dostaw?
+```text
+mamy wielu sprzedawców którzy mają spore opóźnienia względem estymacji dostawy 
+wklejam tylko piersze 10 rekordów 
+
+		seller_id				    ordersdelayed_orders   pct_rate
+ede0c03645598cdfc63ca8237acbe73d		43		14			32.56
+ad781527c93d00d89a11eecd9dcad7c1		38		12			31.58
+54965bbe3e4f07ae045b90b0b8541f52		73		22			30.14
+2a1348e9addc1af5aaa619b1a3679d6b		48		13			27.08
+835f0f7810c76831d6c7d24c7a646d4d		42		11			26.19
+beadbee30901a7f61d031b6b686095ad		64		15			23.44
+a49928bcdf77c55c6d6e05e09a9b4ca5		96		21			21.88
+ef990a83bbea832f36ebe81376335aa8		43		9			20.93
+712e6ed8aa4aa1fa65dab41fed5737e4		77		16			20.78
+71039d19d4303bf9054d69e9a9236699		35		7			20.00
+```
 
 ## 6) Dostawa i logistyka (Delivery / SLA)
 
