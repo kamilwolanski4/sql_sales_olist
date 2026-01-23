@@ -20,17 +20,17 @@ Folder dashboard będzie miał w sobie dane z powerbi.
    
 ## Co znajdziesz w tym projekcie?
 
-Czysczenie danych, sprawdzanie ich popraności
+- Czyszczenie danych, sprawdzanie ich popraności
 
-Analizę brakujących wartości
+- Analizę brakujących wartości
 
-Funkcje agregujące takie jak: COUNT, SUM, AVG, MIN, MAX, ROUND, EXTRACT itp.
+- Funkcje agregujące takie jak: COUNT, SUM, AVG, MIN, MAX, ROUND, EXTRACT itp.
 
-Klauzule takie jak: SELECT, WHERE, HAVING, GROUP BY, ORDER BY, LEFT JOIN, INNER JOIN, CASE WHEN, LIMIT.
+- Klauzule takie jak: SELECT, WHERE, HAVING, GROUP BY, ORDER BY, LEFT JOIN, INNER JOIN, CASE WHEN, LIMIT.
 
-Funkcje okna (window functions) takie jak: RANK, ROW_NUMBER, OVER, PARTITION BY.
+- Funkcje okna (window functions) takie jak: RANK, ROW_NUMBER, OVER, PARTITION BY.
 
-CTE (Common Table Expressions) oraz podzapytania (subqueries).
+- CTE (Common Table Expressions) oraz podzapytania (subqueries).
    
    
    
