@@ -58,11 +58,43 @@ year  month quantity
 ```
 
 8. Jak zmienia się przychód w czasie (trend miesięczny / roczny)?
+```text
+year  month  revenue
+2016	9	134.97
+2016	10	40325.11
+2016	12	10.90
+2017	1	106888.10
+2017	2	234163.38
+2017	3	355372.21
+2017	4	338207.85
+2017	5	490696.21
+2017	6	425825.55
+2017	7	476556.89
+2017	8	555061.46
+2017	9	597240.93
+2017	10	652987.87
+2017	11	972604.18
+2017	12	747390.69
+2018	1	917667.20
+2018	2	819355.27
+2018	3	963604.25
+2018	4	953526.94
+2018	5	999867.28
+2018	6	859882.79
+2018	7	849818.11
+2018	8	862639.54
+```
 
 9. Który miesiąc był najlepszy pod względem liczby zamówień?
-
+```text
+year   month  nr_of_orders
+2017	11	     7395
+```
 10. Który miesiąc był najlepszy pod względem przychodu?
-
+```text 
+year   month    total_revenue
+2018	 5		   999867.28
+```
 11. Jaka jest średnia wartość zamówienia (AOV – Average Order Value)?
 
 12. Jaka jest średnia liczba produktów (pozycji) w zamówieniu?
