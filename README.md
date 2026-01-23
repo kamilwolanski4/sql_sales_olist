@@ -5,11 +5,17 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 Pytania zanjdują się w innym pliku o nazwie 44_questions_to_olist
 
+
+
 Folder *analysis* powstał z myślą aby jak najbardziej ułatwić poruszanie się w tym projekcie. 
 Foldery, które się w nim znajdują odpowiadają pytaniom biznesowym, które zostały podzielone na sekcje/kategorie. (nazwy folderów)
 Najlepiej spojrzeć na głównej stronie plik *44_questions_to_olist* i zapoznać się z pytaniami, a następnie wrócić do folderu analysis. 
 
 Folder base mieści w sobie quelity checks aby wiedzieć czy dane mają kluczowe błedy, które mogłyby utrudnić analizę.
+
+Folder dashboard będzie miał w sobie dane z powerbi.
+
+
 
 Co znajdziesz w tym projekcie?
 
@@ -26,10 +32,12 @@ Funkcje okna (window functions) takie jak: RANK, ROW_NUMBER, OVER, PARTITION BY.
 CTE (Common Table Expressions) oraz podzapytania (subqueries).
 
 
+
 INFORMACJE DODATKOWE / MODYFIKACJE DANYCH: 
 - tabela *olist_geolocation_dataset*.
   
 Tabela geolokalizacji zawiera wiele punktów dla jednego prefiksu kodu pocztowego, dlatego została zagregowana do jednego rekordu na prefiks poprzez uśrednienie wartości szerokości i długości geograficznej (latitude/longitude), aby uniknąć zwielokrotnienia wierszy podczas wykonywania złączeń (JOIN).
+
 
 
 EXECUTIVE SUMMARY
