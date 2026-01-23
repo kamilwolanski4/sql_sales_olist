@@ -98,14 +98,33 @@ limit 1
 
 /* 25.Czy istnieją sprzedawcy, którzy mają wyraźnie wyższy odsetek opóźnionych dostaw? */
 
-
-select 
-	oi.seller_id 
-	,DATEDIFF(o.order_delivered_customer_date, o.order_estimated_delivery_date ) as delay_days
-from orders 		   o
-inner join order_items oi on o.order_id = oi.order_id 
-group by 1, 2
-order by 2 desc
+with base as (
+  select
+    oi.seller_id,
+    o.order_id,
+    datediff(o.order_delivered_customer_date, o.order_estimated_delivery_date) as delay_days
+  from orders o
+  join order_items oi on o.order_id = oi.order_id
+  where o.order_status = 'delivered'
+    and o.order_delivered_customer_date is not null
+    and o.order_estimated_delivery_date is not null
+),
+per_seller as (
+  select
+    seller_id,
+    count(distinct order_id) as total_orders,
+    count(distinct case when delay_days > 0 then order_id end) as delayed_orders
+  from base
+  group by seller_id
+)
+select
+  seller_id,
+  total_orders,
+  delayed_orders,
+  round(delayed_orders / nullif(total_orders, 0) * 100 , 2) as delayed_rate_pct
+from per_seller
+where total_orders >= 30
+order by delayed_rate_pct desc, total_orders desc
 
 /*
 mamy wielu sprzedawców którzy mają spore opóźnienia względem estymacji dostawy 
@@ -144,6 +163,7 @@ e83c76265fc54bf41eac728805e4da77	159
 	
 	
 	
+
 
 
 
