@@ -254,39 +254,164 @@ ef990a83bbea832f36ebe81376335aa8		43		9			20.93
 ## 6) Dostawa i logistyka (Delivery / SLA)
 
 26. Jaki jest średni koszt dostawy (freight) na zamówienie?
+- 22.79
 
 27. Jaki jest średni czas dostawy (od zakupu do dostarczenia)?
+- 12.5 dnia 
 
 28. Jaki jest średni czas od zatwierdzenia zamówienia do dostarczenia?
+- 11.98 dnia
 
 29. Jaki % zamówień dostarczono po czasie (late deliveries)?
+- 6.77 %
 
 30. Jaki % zamówień dostarczono przed estymowaną datą dostawy?
+- 91.89 %
 
 31. W których stanach dostawy trwają najdłużej (średni delivery time)?
+```text
+stan delivery time     rank
+RR			29.3415		1
+AP			27.1791		2
+AM			26.3586		3
+AL			24.5013		4
+PA			23.7252		5
+MA			21.5119		6
+SE			21.4627		7
+CE			21.2002		8
+AC			21.0000		9
+PB			20.3888		10
+```
 
 32. Jak różni się czas dostawy pomiędzy kategoriami produktów?
+```text 
+artes_e_artesanato								5.74
+la_cuisine										7.09
+livros_importados								7.61
+portateis_cozinha_e_preparadores_de_alimentos	8.23
+artigos_de_festas								8.82
+fashion_roupa_infanto_juvenil					9.60
+alimentos										9.74
+construcao_ferramentas_iluminacao				9.77
+portateis_casa_forno_e_cafe						9.89
+bebidas											10.27
+```
 
 ## 7) Płatności
 
 33. Jakie metody płatności są najczęściej wybierane?
+```text
+credit_card		76505
+boleto			19784
+voucher			3866
+debit_card		1528
+not_defined		3
+```
+
 
 34. Jaka jest średnia kwota płatności na zamówienie?
+- 160.99
 
 35. Jaka jest średnia liczba rat (installments) na zamówienie?
+- 2.98
 
 36. Czy zamówienia opłacane różnymi metodami mają różną średnią wartość?
+```text 
+credit_card			163.94
+boleto				145.03
+debit_card			142.66
+voucher				98.15
+not_defined			0.00
+
+Średnia wartość wg metody pokazuje średnią kwotę zapłaconą tą metodą,
+ale ~2246 zamówień było opłaconych mieszanymi metodami, 
+więc część wartości zamówienia jest rozbita między typy płatności
+
+Można uwzględnić to w analizach jeśli kontekst biznesowy by tego wymagał
+ ```
 
 ## 8) Opinie i satysfakcja klienta (Reviews)
 
 37. Jaka jest średnia ocena (review_score) w całym zbiorze?
+- 4.09
 
 38. Jak oceny różnią się pomiędzy kategoriami produktów?
+```text
+wypisuje pierwsze 10
+ livros_interesse_geral				4.47
+construcao_ferramentas_ferramentas	4.43
+livros_tecnicos						4.41
+livros_importados					4.38
+alimentos_bebidas					4.38
+malas_acessorios					4.34
+fashion_roupa_infanto_juvenil		4.33 
+```
 
 39. Czy zamówienia z dłuższym czasem dostawy mają niższe oceny?
+```text  
+delivery_group     score    ranking
+fast_delivery   	4.49	1
+mid_delivery	    4.42	2
+slow_delivery	    4.32	3
+very_slow_delivery	3.67	4
+```
 
 40. Jaki jest odsetek zamówień z oceną 1–2 (negatywne) i ile z nich było opóźnionych?
+```text
+ nr_low_reviews		pct		 nr_low_and_delay_reviews	
+ 12310				12.76		3986
+```
 
 41. Które top 10 kategorii ma najwyższy średni koszt dostawy w relacji do ceny produktu (freight/price ratio)?
+```text
+ category				nr_of_orders  freight/price ratio   rank
+casa_conforto_2				22			0.540444			1
+flores						28			0.469462			2
+moveis_colchao_e_estofado	37			0.365772			3
+artigos_de_natal			125			0.365120			4
+fraldas_higiene				25			0.363409			5
+cds_dvds_musicais			12			0.308205			6
+sinalizacao_e_seguranca		137			0.303977			7
+alimentos_bebidas			218			0.295383			8
+eletronicos					2503		0.294659			9
+fashion_esporte				25			0.274110			10
+```
 
 42. Czy klienci powracający (2+ zamówienia) wystawiają wyższe oceny niż nowi klienci?
+```text 
+ returning     new
+  4.11		   4.08
+```
+
+43. Którzy sprzedawcy mają najwięcej anulowanych zamówień (i jaki jest ich cancel rate)?
+```text
+wypisze top 10 canceled 
+   			seller_id			nr_canceled 	total   rate
+cc419e0650a3c5ba77189a1882b7556a	9			1706	0.53
+6560211a19b47992c3666cc44a7e94c0	7			1854	0.38
+620c87c171fb2a6dd6e8bb4dec959fc6	6			740		0.81
+81783131d2a97c8d44d406a4be81b5d9	5			13		38.46
+a416b6a846a11724393025641d4edd5e	5			162		3.09
+c3867b4666c7d76867627c2f7fb22e21	5			245		2.04
+1127b7f2594683f2510f1c2c834a486b	4			114		3.51
+3d871de0142ce09b7081e2b9d1733cb1	4			1080	0.37
+4c8b8048e33af2bf94f2eb547746a916	4			23		17.39
+7e93a43ef30c4f03f38b393420bc753a	4			336		1.19
+```
+
+44. Czy istnieje próg liczby rat (np. ≥6), po którym wyraźnie spada średnia ocena zamówienia?* 
+```text
+installments  review_score	nr_of_orders 
+0					5.00	2
+1					4.19	46518
+2					4.17	11954
+3					4.12	10061
+4					4.12	6828
+5					4.12	5042
+6					4.14	3764
+7					4.14	1546
+8					4.09	4095
+9					4.19	610
+```
+
+	
