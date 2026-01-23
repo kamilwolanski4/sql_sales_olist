@@ -357,7 +357,7 @@ c3867b4666c7d76867627c2f7fb22e21	5			245		2.04
 
 
 
-/*Czy istnieje próg liczby rat (np. ≥6), po którym wyraźnie spada średnia ocena zamówienia? */
+/* 44. Czy istnieje próg liczby rat (np. ≥6), po którym wyraźnie spada średnia ocena zamówienia? */
 
 with
 installments as 
@@ -402,6 +402,7 @@ installments  review_score	nr_of_orders
 8					4.09	4095
 9					4.19	610
  */
+
 
 
 
