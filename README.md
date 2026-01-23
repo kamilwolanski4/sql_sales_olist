@@ -25,3 +25,16 @@ INFORMACJE DODATKOWE / MODYFIKACJE DANYCH:
 - tabela *olist_geolocation_dataset*.
   
 Tabela geolokalizacji zawiera wiele punktów dla jednego prefiksu kodu pocztowego, dlatego została zagregowana do jednego rekordu na prefiks poprzez uśrednienie wartości szerokości i długości geograficznej (latitude/longitude), aby uniknąć zwielokrotnienia wierszy podczas wykonywania złączeń (JOIN).
+
+
+EXECUTIVE SUMMARY
+1. Total revenue: 13,221,498.11 brl
+2. Number of orders: 99 441
+3. Number of customers: 96 096
+4. Avereage order value: 137.04
+5. Average freight value: 22.79
+6. Freight / price ratio(sum freight / sum price): 0.17
+7. Average review score: 4.09
+8. Cancel rate %: 0.63% 
+9. Returning customers %(customers with +2 orders): 3.12%
+10. On-time delivery %: 91.89%
