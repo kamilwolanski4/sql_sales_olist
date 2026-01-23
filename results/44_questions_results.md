@@ -8,14 +8,14 @@
 
 3. Jaka jest liczba zamówień w podziale na status (delivered / canceled / shipped itd.)?
  ```text
-  delivered:  	96 478
-  shipped:		   1 107
-  canceled:	   625
+  delivered: 96 478
+  shipped: 1 107
+  canceled: 625
   unavailable: 609
-  invoiced:	   314
-  processing:	 301
-  created:		   5
-  approved:   	2
+  invoiced: 314
+  processing: 301
+  created: 5
+  approved: 2
 ```
 
 4. Ile unikalnych sprzedawców działa w systemie?
